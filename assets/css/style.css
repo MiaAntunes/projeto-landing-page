@@ -172,45 +172,14 @@ article{
 }
 
 .quemSomos-container-photos {
-    display: grid;
-    grid-template-columns: 
-    "photo-1"
-    "photo-2"
-    "photo-3"
-    "photo-4";
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(4,9vh);
+    display:flex;
+ }
+#photo-1{
+    height: 35vh;
 }
-
-.photo-1{
-    grid-area: photo-1;
-    grid-column: 1/1;
-    grid-row: ;
+#photo-2{
+    height: 35vh;
 }
-
-.photo-2{
-    grid-area: ;
-    grid-column: 2/2;
-    grid-row: ;
-}
-
-.photo-3{
-    grid-area: ;
-    grid-column:1/1 ;
-    grid-row: ;
-}
-
-.photo-4{
-    grid-area: ;
-    grid-column: 1/1;
-    grid-row: ;
-}
-
-.quemSomos-photos{
-    width: 11rem;
-    max-width: 20em;
-}
-
 
 /*---------------NOSSOS SERVIÇOS----------------*/
 .nossoServico {
