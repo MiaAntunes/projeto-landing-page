@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+/*Responsividade do Site*/
+@import url(media-query.css);
 
 * {
     margin: 0;
@@ -14,7 +16,7 @@
     --white: #F2F2F2;
 }
 
-/*Obs: Configuração para 1280px*/
+/*Obs: Configuração para 1660px*/
 body {
     font-family: 'Poppins', sans-serif;
 }

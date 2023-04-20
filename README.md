@@ -14,7 +14,15 @@
 
 
 # Prévia do Design
-![Previa de Design](assets/img/previa-do-site.png)
+![Previa de Design](assets/img/thumbnail-site.png)
 
 Link para
 [Figma](https://www.figma.com/file/65dlz2DhUriWut9usaeHGE/Projeto-Landing-Page---Upfour?node-id=45%3A108&t=gY91RIABDafnr29e-1)
+
+
+
+# Sobre
+
+
+
+
