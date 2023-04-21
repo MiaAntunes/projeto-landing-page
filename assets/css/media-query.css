@@ -1,0 +1,161 @@
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /*-----------------------------------------------HEADER-----------------------------------------------------*/
+    header {
+        padding: 1em;
+    }
+
+    .header-container {
+        display: none;
+    }
+
+    .header-container-menuBar {
+        display: flex;
+    }
+
+    #logo-header {
+        width: 10vw;
+        height: 3.5vh;
+    }
+
+    .menuBar {
+        display: flex;
+    }
+
+    .menuBar-photo {
+        /*FAZERRRR!!!!!!*/
+        background-image: url();
+    }
+
+    .menuBar-lista {
+        /*FAZERRRR!!!!!!*/
+        display: none;
+    }
+
+    /*----------------------------------------------------MAIN-------------------------------------------------------*/
+
+
+}
+
+@media screen and (min-device-width : 1024px) and (max-device-width : 1280px) {
+
+    /*-----------------------------------------------HEADER-----------------------------------------------------*/
+    .header-logo {
+        width: 5rem;
+    }
+
+    .menuNormal-item {
+        font-size: 1rem;
+    }
+
+    /*----------------------------------------------------MAIN-------------------------------------------------------*/
+
+    /*---------------HOME----------------*/
+    #logo-home {
+        width: 28vw;
+    }
+
+    .home-container {
+        height: 60vh;
+    }
+
+    #photo-home {
+        width: 50vw;
+    }
+
+    /*---------------QUEM SOMOS----------------*/
+    .quemSomos-container {
+        width: 40vw;
+        height: 25vh;
+    }
+
+    #photo-1,
+    #photo-2 {
+        height: 20vh;
+        width: 20vw;
+    }
+
+    .quemSomos-container-photos {
+        flex-wrap: wrap;
+        width: 30vw;
+    }
+
+}
+
+@media screen and (min-device-width : 1280px) and (max-device-width : 1440px) {
+
+    /*-----------------------------------------------HEADER-----------------------------------------------------*/
+    .header-logo {
+        width: 4rem;
+    }
+
+    .menuNormal-item {
+        font-size: 1.05rem;
+    }
+
+    /*----------------------------------------------------MAIN-------------------------------------------------------*/
+
+    /*---------------HOME----------------*/
+    #logo-home {
+        width: 30vw;
+    }
+
+    #photo-home {
+        width: 45vw;
+    }
+
+    /*---------------QUEM SOMOS----------------*/
+    .quemSomos-container {
+        width: auto;
+    }
+
+    .quemSomos-container-photos {
+        gap: 1em;
+    }
+
+
+    /*---------------NOSSOS SERVIÇOS----------------*/
+    .nossoServico-container {
+        width: auto;
+    }
+
+    /*---------------FAQ/Perguntas Frequentemente----------------*/
+    .faq-content {
+        grid-template-columns: repeat(4, 18vw);
+        grid-template-rows: repeat(5, 1fr);
+        height: 90%;
+        /*Mudar!!!*/
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-device-width : 1440px) and (max-device-width : 1660px) {
+
+    /*----------------------------------------------------MAIN-------------------------------------------------------*/
+    /*quemSomos------------*/
+    .quemSomos {
+        gap: 2.5rem;
+    }
+
+    .quemSomos-content {
+        height: 35vh;
+    }
+
+    .quemSomos-container-photos {
+        gap: 1rem;
+    }
+
+    #photo-1,
+    #photo-2 {
+        height: 30vh;
+    }
+
+    /*nossoServiço------------*/
+    .nossoServico-quadrado {
+        height: 15em;
+    }
+
+    .nossoServico-text {
+        font-size: .8em;
+    }
+}
