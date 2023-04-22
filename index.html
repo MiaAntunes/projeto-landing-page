@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPFOUR.</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-query.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <!--MUDAR Colocar um div-->
     <header>
-        <div class="header-container"><!--MUDAR-->
+        <section class="header-container">
             <img src="assets/img/logo-header.png" alt="Foto da Logo" class="header-logo">
             <nav class="menuNormal">
                 <ul class="menuNormal-lista">
@@ -25,15 +26,39 @@
                     <li class="menuNormal-item"><a href="#contato" class="menuNormal-link">Contato</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="header-container-menuBar"><!--FAZER !!!!!--> <!--MUDAR-->
-        </div>
+        </section>
+        <section class="header-container-menuBar">
+            <img src="assets/img/logo-phone.png" alt="Logo do Site" id="logo-header">
+            <nav class="menuBar">
+                <span class="menuBar-photo"></span>
+                <ul class="menuBar-lista">
+                    <li class="menuBar-item">
+                        <a href="#home" class="menuBar-item">Home</a>
+                    </li>
+                    <li class="menuBar-item">
+                        <a href="#quemSomos" class="menuBar-item">Quem Somos?</a>
+                    </li>
+                    <li class="menuBar-item">
+                        <a href="#nossoServiço" class="menuBar-item">Nossos serviços</a>
+                    </li>
+                    <li class="menuBar-item">
+                        <a href="#FAQ" class="menuBar-item">FAQ</a>
+                    </li>
+                    <li class="menuBar-item">
+                        <a href="#ondeEstamos" class="menuBar-item">Onde Estamos?</a>
+                    </li>
+                    <li class="menuBar-item">
+                        <a href="#contato" class="menuBar-item">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main>
         <section class="home" id="home">
             <div class="home-container"><!--MUDAR PARA ARTICLE?-->
-                <img src="assets/img/logo-home.svg" alt="Logo da Upfour">
-                <img src="assets/img/foto-home.png" alt="Mulher sorrindo com o Notebook">
+                <img src="assets/img/logo-home.svg" alt="Logo da Upfour" id="logo-home">
+                <img src="assets/img/foto-home.png" alt="Mulher sorrindo com o Notebook" id="photo-home">
             </div>
             <div class="home-paragraphy">
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatibus velit
@@ -55,11 +80,11 @@
                         aperiam provident animi sint, excepturi autem hic assumenda! Quia magnam velit odit atque.</p>
                     <div class="quemSomos-social">
                         <a href="http://https://www.instagram.com/miaa_antunes/" class="social-link"><img
-                                src="assets/img/instagram.svg" alt="Link para Instagram"></a>
+                                src="assets/img/instagram.svg" alt="Link para Instagram" class="social-photo"></a>
                         <a href="http://https://www.linkedin.com/in/miaantunes/" class="social-link"><img
-                                src="assets/img/linkedin.svg" alt="Link para Linkedin"></a>
+                                src="assets/img/linkedin.svg" alt="Link para Linkedin" class="social-photo"></a>
                         <a href="http://https://www.youtube.com/" class="social-link"><img src="assets/img/youtube.svg"
-                                alt="Link para Youtube"></a>
+                                alt="Link para Youtube" class="social-photo"></a>
                     </div>
                 </div>
             </div>
@@ -104,10 +129,10 @@
             </article>
         </section>
         <section class="faq" id="FAQ">
-            <article>
+            <article class="faq-article">
                 <div class="title-container">
                     <span class="title-quadrado"></span>
-                    <h1 class="title">Quem Somos?</h1>
+                    <h1 class="title">FAQ/Perguntas Frequentes</h1>
                 </div>
                 <div class="faq-content">
                     <div class="faq-quadrado quadrado-1">
