@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
 
-
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 :root {
@@ -16,7 +15,7 @@
     --white: #F2F2F2;
 }
 
-/*Obs: Configuração para 1660px*/
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -30,53 +29,33 @@ header {
     width: 100%;
 }
 
-.header-container {
+.header-container-menuBar{
     align-items: center;
     display: flex;
 }
 
-.header-container-menuBar{
+.header-container{
     display: none;
 }
 
-/*menuNormal-----------*/
-.menuNormal-lista {
-    display: flex;
-    gap: 1.5rem;
-    /*24px*/
-    margin: 0 1rem;
-    position: absolute;
-    right: 0;
-    top: 35%;
-    /*Dúvida de como deixar o mnu-item para o canto direito*/
-
+.logo-header{
+    width: 2.5rem;
 }
 
-.menuNormal-item {
-    font-size: 1.12rem;
-    /*17.92px*/
-    font-weight: 500;
-    list-style: none;
+/*ESPAÇO PARA O NAVBAR - DESIGN*/
+.menuBar-lista{
+    display: none;
 }
-
-.menuNormal-link {
-    color: var(--black);
-}
-
-.menuNormal-link:hover {
-    background-color: var(--black);
-    color: var(--white);
-}
-
 
 /*----------------------------------------------------MAIN-------------------------------------------------------*/
 main {
     background-color: var(--black);
 }
 
-main > section {
-    height: 85vh;
-}
+/* ! Somente desktop */
+/* main > section { 
+    height: 65vh;
+} */ 
 
 article{
     align-items: center;
@@ -87,24 +66,24 @@ article{
     /*MAX-WIDTH*/
 }
 
-/*Title (FIXO)--------*/
+/*------------Title (FIXO)--------*/
 /*Esse tem em todas as sections*/
-.title-container {
+.title-container { /* ! Não mexer */
     display: flex;
     min-width: 8em;
 
 }
 
-.title-quadrado {
+.title-quadrado { /* ! Não mexer */
     align-items: center;
     display: flex;
     background-color: var(--cinza);
-    min-width: 6rem;
+    min-width: 5rem;
 
 }
 
-.title {
-    font-size: 1.5em;
+.title { /* ! Só mexer o tamanho da fonte */
+    font-size: .9em;
     font-weight: 400;
     position: relative;
     color: var(--white);
@@ -112,94 +91,106 @@ article{
 }
 
 /*Padrão de Estilo das sections: Quem somos, Onde estamos, */
-.container{
+
+.container{/* ! GAP, PADDING E MAX-WIDTH */
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1.5em;
     justify-content: center;
 }
 
-.content{
+.content{ /* ! Só mexer width, gap,*/
     align-items: center;
     display: flex;
-    border: 5px solid var(--cinza);
-    gap: 1.5rem;
+    border: 3px solid var(--cinza);
+    gap: 1.5em;
     flex-direction: column;
     justify-content: center;
-    height: 40vh;
-    padding: 1rem;
+    padding: .6rem;
     text-align: center;
-    max-width:65vh;
+    max-width:60vw;
 }
 
-/*---------------HOME----------------*/
-.home {
+/*----------------------HOME------------------------*/
+.home { /* ! Não mexer, retirar só o height */
     align-items: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     padding: 1rem;
+    height: 65vh;
 }
 
-.home-container {
+.home-container { /* ! Só mexer width, gap, height*/
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 1.5em;
+    gap: 1em;
     justify-content: center;
-    height: 80vh;
+    height: 35vh;
     width: 100vw;
 }
 
-.home-paragraphy {
-    border: 2px solid var(--cinza);
-    padding: 1rem;
-    width: 60vw;
-    text-align: center;
+#logo-home{ /* ! Só mexer width*/
+    width: 27vw;
+
 }
 
-.text {
+#photo-home{ /* ! Só mexer width*/
+    width: 42vw;
+}
+
+.home-paragraphy {
+    border: 1px solid var(--cinza);
+    padding: .5rem;
+    text-align: center;
+    width: 80vw;
+    height: auto;
+}
+
+.text{
     color: var(--white);
+    font-size: .5rem;
 }
 
 /*---------------QUEM SOMOS?----------------*/
-.quemSomos {
+.quemSomos { /* ! Não mexer, retirar só o height */
     align-items: center;
     display: flex;
-    gap: 3rem;
-    justify-content: center;
-    
+    gap: 1rem;
+    justify-content: center;  
+    height: 75vh;
 }
 
-.quemSomos-container{
-    width: 48vh;
+.quemSomos-content{
+    width: 50vw;
 }
 
-.social-link {
-    margin: 0 1rem;
+.social-link { /* ! Só mexer margin*/
+    margin: 0 .5rem;
 }
 
-.social-photo{
-    width: 2.8em;
+.social-photo{ /* ! Só mexer width*/
+    width: 1.2em;
 }
 
-.quemSomos-container-photos {
+.quemSomos-container-photos { /* ! Só mexer width*/
     display:flex;
     flex-wrap: wrap;
+    width: 30vw;
 }
 
-#photo-1{
-    height: 35vh;
-}
-#photo-2{
-    height: 35vh;
+#photo-1,#photo-2{ 
+    width: 5rem;
 }
 
 /*---------------NOSSOS SERVIÇOS----------------*/
-.nossoServico {
+.nossoServico { 
     align-items: center;
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 
 .nossoServico-container {
@@ -207,30 +198,33 @@ article{
     border: 2px solid var(--cinza);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     justify-content: center;
     max-width: 85vw;
-    padding: 1rem;
-    height: 45vh;
-    width: 70vw;
+    padding: 1.5rem;
+    height: auto;
+    width: 80vw;
 }
 
 .nossoServico-content {
+    align-items: center;
+    justify-content: center;
     display: flex;
-    gap: 3rem;
-    padding: 1em;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0 1em;
+
 }
 
 .nossoServico-quadrado {
     background-color: var(--bege);
-    box-shadow: 10px 10px 1px var(--cinza);
-    height: 14em;
-    max-width: 15em;
+    box-shadow: 5px 5px 1px var(--cinza);
+    height: 7em;
+    width: 7em;
 }
 
 .nossoServico-text {
-    font-size: 13px;
-    margin: 1rem;
+    font-size: .5em;
+    margin: .6rem;
     text-align: center;
 }
 
@@ -241,6 +235,7 @@ article{
     flex-direction: column;
     justify-content: center;
     color: var(--white);
+    height: 150vh;
 }
 
 .faq-content{
@@ -250,67 +245,67 @@ article{
     "quadrado-2"
     "quadrado-3"
     "quadrado-4";
-    grid-template-columns: repeat(4, 23.5vh);
-    grid-template-rows: repeat(5,4.5em);
-    gap: .5em;
-    justify-content: center;
+    grid-template-columns: repeat(5,4vh);
+    grid-template-rows: repeat(6,9em);
+    gap: 1.5em;
     text-align: center;
+    height: 90vh;
+}
+
+.quadrado{
+    border: 2px solid var(--cinza);
+    padding: 1em;
+    font-size: .55em;
 }
 
 .quadrado-1{
-    border: 2px solid var(--cinza);
-    grid-column:1/2 ;
-    grid-row:2/6 ;
-    padding: 1em;
-    margin-right: 1rem;
+    grid-column:1/5 ;
+    grid-row:1/2 ;
 }
 
 .quadrado-2{
-    border: 2px solid var(--cinza);
-    grid-column:2/3 ;
-    grid-row:1/5 ;
-    padding: 1em;
-    margin-right: 1rem;
+    grid-column:2/6 ;
+    grid-row:2/3 ;
 }
 
 .quadrado-3{
-    border: 2px solid var(--cinza);
-    grid-column: 3/4;
-    grid-row:2/6;
-    padding: 1em;
-    margin-right: 1rem;
+    grid-column: 1/5;
+    grid-row:3/4;
 }
 
 .quadrado-4{
-    border: 2px solid var(--cinza);
-    grid-column:4/5;
-    grid-row:1/5 ;
-    padding: 1em;
-    margin-right: 1rem;
+    grid-column:2/6;
+    grid-row:4/5 ;
 }
 
 /*---------------Onde Estamos?--------------------------------*/
 .ondeEstamos {
     align-items: center;
     display: flex;
+    flex-direction: column;
     gap: 3rem;
     justify-content: center;
+    height: 90vh;
 }
 
 .ondeEstamos-content{
-    height: 35vh;
-    max-width: 38vw;
+    height: 25vh;
+    max-width: 45vw;
 }
 
 .ondeEstamos-mapa{
-    max-width: 30rem;
+    max-width: 60vw;
+    max-height: 35vh;
 }
 
 /*---------------Contato---------------------------------------*/
 .contato{
     align-items: center;
     display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
     justify-content:center ;
+    height: 90vh;
 }
 
 .contato-container{
@@ -320,35 +315,39 @@ article{
     flex-direction: column;
     gap: .5rem;
     color: var(--white);
-    height: 44vh;
+    height: 45vh;
     justify-content: center;
-    padding: 1rem .5rem;
-    width: 40vw;
-    max-width: 40rem;
+    padding:  1rem;
+    max-width: 75vw;
 }
 
 .contato-box{
     display: flex;
     flex-direction: column;
-    width: 25rem;
+}
+
+.contato-label{
+    font-size: .6em;
 }
 
 .contato-input{
     background-color: var(--bege);
-    border-radius:1.2rem ;
+    border-radius:8rem ;
     padding: .5em;
-    height: 4vh;
+    height: 3.5vh;
+    width: 100%;
 }
 
 .contato-button{
     background-color: var(--cinza);
     border-radius: .8rem;
     color: var(--white);
-    font-size: 1rem;
+    font-size: .6rem;
     font-family:'Poppins', sans-serif ;
     font-weight: 500;
-    height: 5vh;
-    width: 10rem ;
+    height: 11vh;
+    width: 8rem ;
+    margin: 1em;
 }
 
 .contato-button:hover{
@@ -359,10 +358,11 @@ article{
 /*---------------FOOTER---------------------------------------*/
 footer{
     background-color: var(--bege);
-    height: 4vh;
+    height: 3vh;
 }
 
 .footer-text{
+    font-size: .8em;
     font-weight: 500;
     text-align: center;
 }

@@ -1,83 +1,325 @@
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media screen and (min-device-width : 700px) and (max-device-width : 890px) {
+
+    /*----------------------HOME------------------------*/
+    .home-container {
+        gap: 1.5em;
+        height: 45vh;
+    }
+
+    #logo-home {
+        width: 17em;
+    }
+
+    #photo-home {
+        width: 20em;
+    }
+
+    .text {
+        font-size: .7em;
+    }
+
+    /*---------------QUEM SOMOS?----------------*/
+    .quemSomos {
+        gap: 1.3rem;
+    }
+
+    .social-photo {
+        width: 2em;
+    }
+
+    .quemSomos-container-photos {
+        width: 20vw;
+    }
+
+    #photo-1,
+    #photo-2 {
+        width: 15vw;
+    }
+
+    .nossoServiço {
+        height: 70vh;
+    }
+}
+
+@media screen and (min-device-width : 890px) and (max-device-width : 1024px) {
 
     /*-----------------------------------------------HEADER-----------------------------------------------------*/
-    header {
-        padding: 1em;
+    .header-container-menuBar {
+        display: none;
     }
 
     .header-container {
-        display: none;
-    }
-
-    .header-container-menuBar {
+        align-items: center;
         display: flex;
     }
 
-    #logo-header {
-        width: 10vw;
-        height: 3.5vh;
-    }
-
-    .menuBar {
+    .menuNormal-lista {
         display: flex;
+        gap: 1.5rem;
+        /*24px*/
+        margin: 0 1rem;
+        position: absolute;
+        right: 0;
+        top: 35%;
+        /*Dúvida de como deixar o mnu-item para o canto direito*/
+
     }
 
-    .menuBar-photo {
-        /*FAZERRRR!!!!!!*/
-        background-image: url();
+    .menuNormal-item {
+        font-size: .9rem;
+        font-weight: 500;
+        list-style: none;
     }
 
-    .menuBar-lista {
-        /*FAZERRRR!!!!!!*/
-        display: none;
+    .menuNormal-link {
+        color: var(--black);
+    }
+
+    .menuNormal-link:hover {
+        background-color: var(--black);
+        color: var(--white);
     }
 
     /*----------------------------------------------------MAIN-------------------------------------------------------*/
+    /*Title (FIXO)--------*/
+
+    .title {
+        font-size: 1.4em;
+    }
+
+    .text {
+        font-size: .85em;
+    }
+
+    /*----------------------HOME------------------------*/
+    .home-container {
+        gap: 1.5em;
+        height: 50vh;
+    }
+
+    #logo-home {
+        width: 19em;
+    }
+
+    #photo-home {
+        width: 21em
+    }
 
 
+    /*---------------QUEM SOMOS?----------------*/
+    .quemSomos {
+        gap: 3rem;
+    }
+
+    .quemSomos-content {
+        width: 40vw;
+        height: 30vh;
+    }
+
+    .social-photo {
+        width: 2.2em;
+    }
+
+    #photo-1,
+    #photo-2 {
+        width: 20vw;
+    }
+
+    .quemSomos-container-photos {
+        width: 15vw;
+    }
+
+    /*---------------NOSSOS SERVIÇOS----------------*/
+    .nossoServico {
+        height: 60vh;
+    }
+
+    .nossoServico-container {
+        width: 80vw;
+    }
+
+    .nossoServico-quadrado {
+        height: 10em;
+        width: 10em;
+    }
+
+    .nossoServico-text {
+        font-size: .7rem;
+    }
+
+    /*---------------FAQ/Perguntas Frequentemente----------------*/
+    .faq {
+        height: 90vh;
+    }
+
+    .faq-content {
+        grid-template-columns: repeat(5, 5vh);
+        grid-template-rows: repeat(4, 11em);
+        gap: 2em;
+        height: auto;
+    }
+
+    .quadrado {
+        font-size: .8em;
+    }
+
+    /*---------------Onde Estamos?--------------------------------*/
+    .ondeEstamos {
+        height: 90vh;
+    }
+
+    .ondeEstamos-content {
+        height: 20vh;
+    }
+
+    .ondeEstamos-mapa {
+        width: 75vh;
+    }
+
+    /*---------------Contato---------------------------------------*/
+    .contato {
+        height: 90vh;
+    }
+
+    .contato-container {
+        gap: 1rem;
+        width: 60vw;
+        height: 35vh;
+        padding: 1.5rem;
+    }
+
+    .contato-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato-label {
+        font-size: 1.2rem;
+    }
+
+    .contato-input {
+        width: 50vw;
+    }
+
+    .contato-button {
+        /* !-- Não está pegando o width*/
+        height: 6vh;
+        width: 12rem;
+        font-size: 1.3rem;
+    }
+
+    /*---------------FOOTER---------------------------------------*/
+    .footer-text {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (min-device-width : 1024px) and (max-device-width : 1280px) {
 
     /*-----------------------------------------------HEADER-----------------------------------------------------*/
-    .header-logo {
-        width: 5rem;
+    .header-container-menuBar {
+        display: none;
+    }
+
+    .header-container {
+        align-items: center;
+        display: flex;
+    }
+
+    .menuNormal-lista {
+        display: flex;
+        gap: 1rem;
+        margin: 0 1rem;
+        position: absolute;
+        right: 0;
+        top: 35%;
+        /*Dúvida de como deixar o mnu-item para o canto direito*/
+
     }
 
     .menuNormal-item {
         font-size: 1rem;
+        font-weight: 500;
+        list-style: none;
+    }
+
+    .menuNormal-link {
+        color: var(--black);
+    }
+
+    .menuNormal-link:hover {
+        background-color: var(--black);
+        color: var(--white);
     }
 
     /*----------------------------------------------------MAIN-------------------------------------------------------*/
-
-    /*---------------HOME----------------*/
-    #logo-home {
-        width: 28vw;
+    /*----------------------HOME------------------------*/
+    .home {
+        height: 80vh;
     }
 
     .home-container {
+        gap: 1.5em;
         height: 60vh;
     }
 
-    #photo-home {
-        width: 50vw;
+    #logo-home {
+        width: 21.5em;
     }
 
-    /*---------------QUEM SOMOS----------------*/
-    .quemSomos-container {
+    #photo-home {
+        width: 22em
+    }
+
+    .text {
+        font-size: .85em;
+    }
+
+    /*---------------QUEM SOMOS?----------------*/
+    .quemSomos {
+        gap: 3rem;
+        height: 80vh;
+    }
+
+    .quemSomos-content {
         width: 40vw;
-        height: 25vh;
+        height: 35vh;
+    }
+
+    .social-photo {
+        width: 2.2em;
     }
 
     #photo-1,
     #photo-2 {
-        height: 20vh;
-        width: 20vw;
+        width: 17vw;
     }
 
     .quemSomos-container-photos {
-        flex-wrap: wrap;
-        width: 30vw;
+        width: 15vw;
+    }
+
+    /*---------------NOSSOS SERVIÇOS----------------*/
+    .nossoServico {
+        height: 70vh;
+    }
+
+    .nossoServico-container {
+        width: 70vw;
+    }
+
+    .nossoServico-quadrado {
+        height: 9em;
+        width: 9em;
+    }
+
+    .nossoServico-text {
+        font-size: .68rem;
+    }
+
+    /*---------------Contato---------------------------------------*/
+    .contato-container {
+        height: 50vh;
     }
 
 }
@@ -85,77 +327,693 @@
 @media screen and (min-device-width : 1280px) and (max-device-width : 1440px) {
 
     /*-----------------------------------------------HEADER-----------------------------------------------------*/
-    .header-logo {
-        width: 4rem;
+    .header-container-menuBar {
+        display: none;
+    }
+
+    .header-container {
+        align-items: center;
+        display: flex;
+    }
+
+    .menuNormal-lista {
+        display: flex;
+        gap: 1.5rem;
+        margin: 0 1rem;
+        position: absolute;
+        right: 0;
+        top: 35%;
+        /*Dúvida de como deixar o mnu-item para o canto direito*/
+
     }
 
     .menuNormal-item {
-        font-size: 1.05rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        list-style: none;
+    }
+
+    .menuNormal-link {
+        color: var(--black);
+    }
+
+    .menuNormal-link:hover {
+        background-color: var(--black);
+        color: var(--white);
     }
 
     /*----------------------------------------------------MAIN-------------------------------------------------------*/
+    main>section {
+        height: 85vh;
+    }
 
-    /*---------------HOME----------------*/
+    .title {
+        font-size: 1.2em;
+    }
+
+    /*----------------------HOME------------------------*/
+    .home-container {
+        gap: 1.5em;
+    }
+
     #logo-home {
-        width: 30vw;
+        width: 25em;
     }
 
     #photo-home {
-        width: 45vw;
+        width: 28em
     }
 
-    /*---------------QUEM SOMOS----------------*/
-    .quemSomos-container {
-        width: auto;
+    .text {
+        font-size: .9em;
+    }
+
+    /*---------------QUEM SOMOS?----------------*/
+    .quemSomos {
+        gap: 3rem;
+    }
+
+    .quemSomos-content {
+        width: 40vw;
+        height: 35vh;
+    }
+
+    .quemSomos-text {
+        padding: 0 .5rem;
+    }
+
+    .social-photo {
+        width: 2.5em;
+    }
+
+    #photo-1,
+    #photo-2 {
+        width: 17vw;
     }
 
     .quemSomos-container-photos {
         gap: 1em;
+        width: 40vw;
     }
 
-
     /*---------------NOSSOS SERVIÇOS----------------*/
+
     .nossoServico-container {
-        width: auto;
+        gap: 2rem;
+        width: 80vw;
+    }
+
+    .nossoServico-content {
+        gap: 3rem;
+        margin-bottom: 1em;
+    }
+
+    .nossoServico-quadrado {
+        padding: .1em;
+        box-shadow: 10px 10px 1px var(--cinza);
+        height: 10em;
+        width: 10em;
+    }
+
+    .nossoServico-text {
+        font-size: .75rem;
     }
 
     /*---------------FAQ/Perguntas Frequentemente----------------*/
+    .faq {
+        height: 100vh;
+    }
+
     .faq-content {
-        grid-template-columns: repeat(4, 18vw);
-        grid-template-rows: repeat(5, 1fr);
-        height: 90%;
-        /*Mudar!!!*/
-        font-size: 14px;
+        display: grid;
+        grid-template-areas:
+            "quadrado-1"
+            "quadrado-2"
+            "quadrado-3"
+            "quadrado-4";
+        grid-template-columns: repeat(4, 25vh);
+        grid-template-rows: repeat(5, 3em);
+        gap: 1.5em;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .quadrado {
+        font-size: .7em;
+    }
+
+    .quadrado-1 {
+        grid-column: 1/2;
+        grid-row: 3/6;
+    }
+
+    .quadrado-2 {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    .quadrado-3 {
+        grid-column: 3/4;
+        grid-row: 3/6;
+    }
+
+    .quadrado-4 {
+        grid-column: 4/5;
+        grid-row: 1/4;
+    }
+
+    /*---------------Onde Estamos?--------------------------------*/
+    .ondeEstamos {
+        flex-direction: row;
+        height: 90vh;
+    }
+
+    .ondeEstamos-content {
+        padding: 1em;
+        height: 30vh;
+        width: 30vw;
+    }
+
+    .ondeEstamos-mapa {
+        width: 45vw;
+        max-height: 45vh;
+    }
+
+    /*---------------Contato---------------------------------------*/
+    .contato {
+        gap: 4rem;
+        flex-direction: row;
+        height: 90vh;
+    }
+
+    .contato-container {
+        height: 55vh;
+        width: 50vw;
+    }
+
+    .contato-label {
+        font-size: 1em;
+    }
+
+    .contato-input {
+        padding: .5em;
+        height: 4vh;
+        width: 40vw;
+    }
+
+    .contato-button {
+        font-size: 1rem;
+        height: 6vh;
+        width: 8rem;
+    }
+
+    /*---------------FOOTER---------------------------------------*/
+    footer {
+        height: 4.5vh;
+    }
+
+    .footer-text {
+        font-size: 1.1em;
     }
 }
 
 @media screen and (min-device-width : 1440px) and (max-device-width : 1660px) {
 
+    /*-----------------------------------------------HEADER-----------------------------------------------------*/
+    .header-container-menuBar {
+        display: none;
+    }
+
+    .header-container {
+        align-items: center;
+        display: flex;
+        padding: 1em;
+    }
+
+    .menuNormal-lista {
+        display: flex;
+        gap: 1.55rem;
+        /*24px*/
+        margin: 0 1rem;
+        position: absolute;
+        right: 0;
+        top: 35%;
+        /*Dúvida de como deixar o mnu-item para o canto direito*/
+
+    }
+
+    .menuNormal-item {
+        font-size: 1.2rem;
+        font-weight: 500;
+        list-style: none;
+    }
+
+    .menuNormal-link {
+        color: var(--black);
+    }
+
+    .menuNormal-link:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+
     /*----------------------------------------------------MAIN-------------------------------------------------------*/
-    /*quemSomos------------*/
+    .title {
+        font-size: 1.5em;
+    }
+
+    /*----------------------HOME------------------------*/
+    .home {
+        height: 85vh;
+    }
+
+    .home-container {
+        gap: 1.5em;
+        height: 65vh;
+    }
+
+    #logo-home {
+        width: 25em;
+    }
+
+    #photo-home {
+        width: 30em;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    /*---------------QUEM SOMOS?----------------*/
     .quemSomos {
-        gap: 2.5rem;
+        gap: 3rem;
+        height: 80vh;
     }
 
     .quemSomos-content {
+        width: 40vw;
         height: 35vh;
     }
 
-    .quemSomos-container-photos {
-        gap: 1rem;
+    .quemSomos-text {
+        padding: 0 .5rem;
+    }
+
+    .social-photo {
+        width: 2.5em;
     }
 
     #photo-1,
     #photo-2 {
-        height: 30vh;
+        width: 17vw;
     }
 
-    /*nossoServiço------------*/
+    .quemSomos-container-photos {
+        gap: 1em;
+        width: 36vw;
+    }
+
+    /*---------------NOSSOS SERVIÇOS----------------*/
+
+    .nossoServico-container {
+        gap: 3rem;
+        width: 80vw;
+    }
+
+    .nossoServico-content {
+        gap: 5rem;
+        margin-bottom: 1em;
+    }
+
     .nossoServico-quadrado {
-        height: 15em;
+        padding: .1em;
+        box-shadow: 10px 10px 1px var(--cinza);
+        height: 11em;
+        width: 11em;
     }
 
     .nossoServico-text {
-        font-size: .8em;
+        font-size: .8rem;
+    }
+
+    /*---------------FAQ/Perguntas Frequentemente----------------*/
+    .faq {
+        height: 100vh;
+    }
+
+    .faq-article {
+        gap: 2.5em;
+    }
+
+    .faq-quadrado-span {
+        width: 8em;
+    }
+
+    .faq-content {
+        display: grid;
+        grid-template-areas:
+            "quadrado-1"
+            "quadrado-2"
+            "quadrado-3"
+            "quadrado-4";
+        grid-template-columns: repeat(4, 30vh);
+        grid-template-rows: repeat(5, 3.5em);
+        gap: 1.5em 3em;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .quadrado {
+        font-size: .9em;
+    }
+
+    .quadrado-1 {
+        grid-column: 1/2;
+        grid-row: 3/6;
+    }
+
+    .quadrado-2 {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    .quadrado-3 {
+        grid-column: 3/4;
+        grid-row: 3/6;
+    }
+
+    .quadrado-4 {
+        grid-column: 4/5;
+        grid-row: 1/4;
+    }
+
+    /*---------------Onde Estamos?--------------------------------*/
+    .ondeEstamos {
+        flex-direction: row;
+        height: 90vh;
+    }
+
+    .ondeEstamos-container {
+        gap: 2em;
+    }
+
+    .ondeEstamos-content {
+        padding: 1em;
+        height: 40vh;
+        width: 30vw;
+    }
+
+    .ondeEstamos-mapa {
+        width: 45vw;
+        max-height: 45vh;
+    }
+
+    /*---------------Contato---------------------------------------*/
+    .contato {
+        gap: 4rem;
+        flex-direction: row;
+        height: 90vh;
+    }
+
+    .contato-container {
+        height: 55vh;
+        width: 50vw;
+    }
+
+    .contato-label {
+        font-size: 1.2em;
+    }
+
+    .contato-input {
+        padding: .5em;
+        height: 4, 5vh;
+        width: 40vw;
+    }
+
+    .contato-button {
+        font-size: 1rem;
+        height: 6.5vh;
+        width: 9rem;
+    }
+
+    /*---------------FOOTER---------------------------------------*/
+    footer {
+        height: 4.5vh;
+    }
+
+    .footer-text {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-device-width : 1660px) and (max-device-width : 3000px) {
+
+    /*-----------------------------------------------HEADER-----------------------------------------------------*/
+    .header-container-menuBar {
+        display: none;
+    }
+
+    .header-container {
+        align-items: center;
+        display: flex;
+        padding: 1em;
+    }
+
+    .menuNormal-lista {
+        display: flex;
+        gap: 1.7rem;
+        /*24px*/
+        margin: 0 1rem;
+        position: absolute;
+        right: 0;
+        top: 35%;
+        /*Dúvida de como deixar o mnu-item para o canto direito*/
+
+    }
+
+    .menuNormal-item {
+        font-size: 1.2rem;
+        font-weight: 500;
+        list-style: none;
+    }
+
+    .menuNormal-link {
+        color: var(--black);
+    }
+
+    .menuNormal-link:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    /*----------------------------------------------------MAIN-------------------------------------------------------*/
+    .content{
+        border: 5px solid var(--cinza);
+    }
+
+    .title-quadrado {
+        min-width: 9rem;
+        height: 4.5vh;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    /*----------------------HOME------------------------*/
+    .home {
+        height: 85vh;
+    }
+
+    .home-container {
+        gap: 1.5em;
+        height: 80vh;
+    }
+
+    #logo-home {
+        width: 25em;
+    }
+
+    #photo-home {
+        max-width: 25vw;
+    }
+
+    .home-paragraphy {
+        border: 2px solid var(--cinza);
+        padding: 1rem;
+        max-width: 50vw;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 1.1rem;
+    }
+
+    /*---------------QUEM SOMOS?----------------*/
+    .quemSomos {
+        gap: 5rem;
+        height: 110vh;
+    }
+
+    .quemSomos-content {
+        max-width: 30vw;
+        height: 40vh;
+    }
+
+    .quemSomos-text {
+        padding: 1rem;
+    }
+
+    .social-photo {
+        width: 3em;
+    }
+
+    #photo-1,
+    #photo-2 {
+        width: 13vw;
+    }
+
+    .quemSomos-container-photos {
+        gap: 1em;
+        width: auto;
+    }
+
+    /*---------------NOSSOS SERVIÇOS----------------*/
+    .nossoServico {
+        height: 110vh;
+    }
+
+    .nossoServico-container {
+        gap: 4rem;
+        width: 70vw;
+    }
+
+    .nossoServico-content {
+        gap: 9rem;
+        margin-bottom: 1em;
+    }
+
+    .nossoServico-quadrado {
+        padding: .1em;
+        box-shadow: 10px 10px 1px var(--cinza);
+        height: 15em;
+        width: 15em;
+    }
+
+    .nossoServico-text {
+        font-size: 1.1rem;
+    }
+
+    /*---------------FAQ/Perguntas Frequentemente ----------------*/
+    .faq {
+        height: 100vh;
+    }
+
+    .faq-article {
+        gap: 2.5em;
+    }
+
+    .faq-quadrado-span {
+        width: 10em;
+    }
+
+    .faq-content {
+        display: grid;
+        grid-template-areas:
+            "quadrado-1"
+            "quadrado-2"
+            "quadrado-3"
+            "quadrado-4";
+        grid-template-columns: repeat(4, 35vh);
+        grid-template-rows: repeat(5, 4.5em);
+        gap: 1.5em 3em;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .quadrado {
+        font-size: 1.1em;
+    }
+
+    .quadrado-1 {
+        grid-column: 1/2;
+        grid-row: 3/6;
+    }
+
+    .quadrado-2 {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    .quadrado-3 {
+        grid-column: 3/4;
+        grid-row: 3/6;
+    }
+
+    .quadrado-4 {
+        grid-column: 4/5;
+        grid-row: 1/4;
+    }
+
+    /*---------------Onde Estamos?--------------------------------*/
+    .ondeEstamos {
+        gap: 6rem;
+        flex-direction: row;
+        height: 90vh;
+    }
+
+    .ondeEstamos-container {
+        gap: 4em;
+    }
+
+    .ondeEstamos-content {
+        padding: 1em;
+        height: 35vh;
+        width: 30vw;
+    }
+
+    .ondeEstamos-mapa {
+        width: 30vw;
+        height: 80vh;
+    }
+
+    /*---------------Contato---------------------------------------*/
+    .contato {
+        gap: 4rem;
+        flex-direction: row;
+        height: 90vh;
+    }
+
+    .contato-container {
+        height: 55vh;
+        width: 50vw;
+    }
+
+    .contato-label {
+        font-size: 1.2em;
+    }
+
+    .contato-input {
+        padding: .5em;
+        height: 5vh;
+        width: 35vw;
+    }
+
+    .contato-button {
+        font-size: 1rem;
+        height: 7vh;
+        width: 10rem;
+    }
+
+    /*---------------FOOTER---------------------------------------*/
+    footer {
+        height: 4.5vh;
+    }
+
+    .footer-text {
+        font-size: 1.1em;
     }
 }
