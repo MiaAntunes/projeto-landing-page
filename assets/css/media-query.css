@@ -1,6 +1,22 @@
 @media screen and (min-device-width : 700px) and (max-device-width : 890px) {
+    .logo-header {
+        width: 3.5rem;
+    }
+
+    /*Menu Mobile -------*/
+    .mobileMenu {
+        margin: 0;
+    }
+
+    .mobileMenu-item {
+        font-size: 1rem;
+    }
 
     /*----------------------HOME------------------------*/
+    .home {
+        height: 90vh;
+    }
+
     .home-container {
         gap: 1.5em;
         height: 45vh;
@@ -20,6 +36,7 @@
 
     /*---------------QUEM SOMOS?----------------*/
     .quemSomos {
+        height: 90vh;
         gap: 1.3rem;
     }
 
@@ -36,15 +53,40 @@
         width: 15vw;
     }
 
+    /*---------------NOSSOS SERVIÇOS----------------*/
     .nossoServiço {
-        height: 70vh;
+        height: 80vh;
+    }
+
+    /*---------------FAQ/Perguntas Frequentemente----------------*/
+    .faq {
+        height: 100vh;
+    }
+
+    /*---------------Onde Estamos?--------------------------------*/
+    .ondeEstamos {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        height: 100vh;
+    }
+
+
+    .contato-container {
+        width: 45vw;
+    }
+
+    .contato-input {
+        width: 30vw;
     }
 }
 
 @media screen and (min-device-width : 890px) and (max-device-width : 1024px) {
 
     /*-----------------------------------------------HEADER-----------------------------------------------------*/
-    .header-container-menuBar {
+    .header-container-mobileMenu {
         display: none;
     }
 
@@ -92,6 +134,10 @@
     }
 
     /*----------------------HOME------------------------*/
+    .home {
+        height: 80vh;
+    }
+
     .home-container {
         gap: 1.5em;
         height: 50vh;
@@ -217,7 +263,7 @@
 @media screen and (min-device-width : 1024px) and (max-device-width : 1280px) {
 
     /*-----------------------------------------------HEADER-----------------------------------------------------*/
-    .header-container-menuBar {
+    .header-container-mobileMenu {
         display: none;
     }
 
@@ -327,7 +373,7 @@
 @media screen and (min-device-width : 1280px) and (max-device-width : 1440px) {
 
     /*-----------------------------------------------HEADER-----------------------------------------------------*/
-    .header-container-menuBar {
+    .header-container-mobileMenu {
         display: none;
     }
 
@@ -541,7 +587,7 @@
 @media screen and (min-device-width : 1440px) and (max-device-width : 1660px) {
 
     /*-----------------------------------------------HEADER-----------------------------------------------------*/
-    .header-container-menuBar {
+    .header-container-mobileMenu {
         display: none;
     }
 
@@ -771,7 +817,7 @@
 @media screen and (min-device-width : 1660px) and (max-device-width : 3000px) {
 
     /*-----------------------------------------------HEADER-----------------------------------------------------*/
-    .header-container-menuBar {
+    .header-container-mobileMenu {
         display: none;
     }
 
@@ -809,7 +855,7 @@
     }
 
     /*----------------------------------------------------MAIN-------------------------------------------------------*/
-    .content{
+    .content {
         border: 5px solid var(--cinza);
     }
 

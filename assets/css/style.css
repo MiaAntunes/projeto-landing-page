@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,35 +29,65 @@ header {
     width: 100%;
 }
 
-.header-container-menuBar{
+.header-container-mobileMenu {
     align-items: center;
     display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
-.header-container{
+.header-container {
     display: none;
 }
 
-.logo-header{
-    width: 2.5rem;
+.logo-header {
+    width: 2.2rem;
 }
 
-/*ESPAÇO PARA O NAVBAR - DESIGN*/
-.menuBar-lista{
-    display: none;
+/*Menu Mobile -------*/
+.mobileMenu{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: .5em ;
+    width: 100vw;
+    height: 5vh;
 }
+
+.mobileMenu-lista{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .6em 1.1em;
+    width: 100%;
+}
+
+.mobileMenu-item{
+    font-size: .8rem;
+    font-weight: 500;
+    list-style: none;
+}
+
+.mobileMenu-link {
+    color: var(--black);
+}
+
+.mobileMenu-link:hover{
+    color: var(--white);
+}
+
+.mobileMenu-item:hover {
+    background-color: var(--black);
+}
+
 
 /*----------------------------------------------------MAIN-------------------------------------------------------*/
 main {
     background-color: var(--black);
 }
 
-/* ! Somente desktop */
-/* main > section { 
-    height: 65vh;
-} */ 
-
-article{
+article {
     align-items: center;
     display: flex;
     gap: 2rem;
@@ -68,13 +98,15 @@ article{
 
 /*------------Title (FIXO)--------*/
 /*Esse tem em todas as sections*/
-.title-container { /* ! Não mexer */
+.title-container {
+    /* ! Não mexer */
     display: flex;
     min-width: 8em;
 
 }
 
-.title-quadrado { /* ! Não mexer */
+.title-quadrado {
+    /* ! Não mexer */
     align-items: center;
     display: flex;
     background-color: var(--cinza);
@@ -82,7 +114,8 @@ article{
 
 }
 
-.title { /* ! Só mexer o tamanho da fonte */
+.title {
+    /* ! Só mexer o tamanho da fonte */
     font-size: .9em;
     font-weight: 400;
     position: relative;
@@ -92,7 +125,8 @@ article{
 
 /*Padrão de Estilo das sections: Quem somos, Onde estamos, */
 
-.container{/* ! GAP, PADDING E MAX-WIDTH */
+.container {
+    /* ! GAP, PADDING E MAX-WIDTH */
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -100,7 +134,8 @@ article{
     justify-content: center;
 }
 
-.content{ /* ! Só mexer width, gap,*/
+.content {
+    /* ! Só mexer width, gap,*/
     align-items: center;
     display: flex;
     border: 3px solid var(--cinza);
@@ -109,20 +144,22 @@ article{
     justify-content: center;
     padding: .6rem;
     text-align: center;
-    max-width:60vw;
+    max-width: 60vw;
 }
 
 /*----------------------HOME------------------------*/
-.home { /* ! Não mexer, retirar só o height */
+.home {
+    /* ! Não mexer, retirar só o height */
     align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    height: 65vh;
+    height: 100vh;
 }
 
-.home-container { /* ! Só mexer width, gap, height*/
+.home-container {
+    /* ! Só mexer width, gap, height*/
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -132,12 +169,14 @@ article{
     width: 100vw;
 }
 
-#logo-home{ /* ! Só mexer width*/
+#logo-home {
+    /* ! Só mexer width*/
     width: 27vw;
 
 }
 
-#photo-home{ /* ! Só mexer width*/
+#photo-home {
+    /* ! Só mexer width*/
     width: 42vw;
 }
 
@@ -149,48 +188,53 @@ article{
     height: auto;
 }
 
-.text{
+.text {
     color: var(--white);
     font-size: .5rem;
 }
 
 /*---------------QUEM SOMOS?----------------*/
-.quemSomos { /* ! Não mexer, retirar só o height */
+.quemSomos {
+    /* ! Não mexer, retirar só o height */
     align-items: center;
     display: flex;
     gap: 1rem;
-    justify-content: center;  
-    height: 75vh;
+    justify-content: center;
+    height: 100vh;
 }
 
-.quemSomos-content{
+.quemSomos-content {
     width: 50vw;
 }
 
-.social-link { /* ! Só mexer margin*/
+.social-link {
+    /* ! Só mexer margin*/
     margin: 0 .5rem;
 }
 
-.social-photo{ /* ! Só mexer width*/
+.social-photo {
+    /* ! Só mexer width*/
     width: 1.2em;
 }
 
-.quemSomos-container-photos { /* ! Só mexer width*/
-    display:flex;
+.quemSomos-container-photos {
+    /* ! Só mexer width*/
+    display: flex;
     flex-wrap: wrap;
     width: 30vw;
 }
 
-#photo-1,#photo-2{ 
+#photo-1,
+#photo-2 {
     width: 5rem;
 }
 
 /*---------------NOSSOS SERVIÇOS----------------*/
-.nossoServico { 
+.nossoServico {
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 150vh;
 }
 
 .nossoServico-container {
@@ -229,7 +273,7 @@ article{
 }
 
 /*---------------FAQ/Perguntas Frequentemente----------------*/
-.faq{
+.faq {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -238,44 +282,44 @@ article{
     height: 150vh;
 }
 
-.faq-content{
+.faq-content {
     display: grid;
-    grid-template-areas: 
-    "quadrado-1"
-    "quadrado-2"
-    "quadrado-3"
-    "quadrado-4";
-    grid-template-columns: repeat(5,4vh);
-    grid-template-rows: repeat(6,9em);
+    grid-template-areas:
+        "quadrado-1"
+        "quadrado-2"
+        "quadrado-3"
+        "quadrado-4";
+    grid-template-columns: repeat(5, 4vh);
+    grid-template-rows: repeat(6, 9em);
     gap: 1.5em;
     text-align: center;
     height: 90vh;
 }
 
-.quadrado{
+.quadrado {
     border: 2px solid var(--cinza);
     padding: 1em;
     font-size: .55em;
 }
 
-.quadrado-1{
-    grid-column:1/5 ;
-    grid-row:1/2 ;
-}
-
-.quadrado-2{
-    grid-column:2/6 ;
-    grid-row:2/3 ;
-}
-
-.quadrado-3{
+.quadrado-1 {
     grid-column: 1/5;
-    grid-row:3/4;
+    grid-row: 1/2;
 }
 
-.quadrado-4{
-    grid-column:2/6;
-    grid-row:4/5 ;
+.quadrado-2 {
+    grid-column: 2/6;
+    grid-row: 2/3;
+}
+
+.quadrado-3 {
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+
+.quadrado-4 {
+    grid-column: 2/6;
+    grid-row: 4/5;
 }
 
 /*---------------Onde Estamos?--------------------------------*/
@@ -285,30 +329,30 @@ article{
     flex-direction: column;
     gap: 3rem;
     justify-content: center;
-    height: 90vh;
+    height: 150vh;
 }
 
-.ondeEstamos-content{
+.ondeEstamos-content {
     height: 25vh;
     max-width: 45vw;
 }
 
-.ondeEstamos-mapa{
+.ondeEstamos-mapa {
     max-width: 60vw;
     max-height: 35vh;
 }
 
 /*---------------Contato---------------------------------------*/
-.contato{
+.contato {
     align-items: center;
     display: flex;
     gap: 1.5rem;
     flex-direction: column;
-    justify-content:center ;
+    justify-content: center;
     height: 90vh;
 }
 
-.contato-container{
+.contato-container {
     align-items: center;
     border: 2px solid var(--cinza);
     display: flex;
@@ -317,51 +361,51 @@ article{
     color: var(--white);
     height: 45vh;
     justify-content: center;
-    padding:  1rem;
+    padding: 1rem;
     max-width: 75vw;
 }
 
-.contato-box{
+.contato-box {
     display: flex;
     flex-direction: column;
 }
 
-.contato-label{
+.contato-label {
     font-size: .6em;
 }
 
-.contato-input{
+.contato-input {
     background-color: var(--bege);
-    border-radius:8rem ;
+    border-radius: 8rem;
     padding: .5em;
     height: 3.5vh;
     width: 100%;
 }
 
-.contato-button{
+.contato-button {
     background-color: var(--cinza);
     border-radius: .8rem;
     color: var(--white);
     font-size: .6rem;
-    font-family:'Poppins', sans-serif ;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    height: 11vh;
-    width: 8rem ;
+    height: 4vh;
+    width: 8rem;
     margin: 1em;
 }
 
-.contato-button:hover{
+.contato-button:hover {
     background-color: var(--bege);
     color: var(--black);
 }
 
 /*---------------FOOTER---------------------------------------*/
-footer{
+footer {
     background-color: var(--bege);
     height: 3vh;
 }
 
-.footer-text{
+.footer-text {
     font-size: .8em;
     font-weight: 500;
     text-align: center;
