@@ -399,6 +399,10 @@ article {
     color: var(--black);
 }
 
+#verificacao{
+    font-size: .5em;
+}
+
 /*---------------FOOTER---------------------------------------*/
 footer {
     background-color: var(--bege);
