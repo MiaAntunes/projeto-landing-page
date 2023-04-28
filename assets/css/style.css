@@ -87,13 +87,12 @@ main {
     background-color: var(--black);
 }
 
-article {
+.article-fixo {
     align-items: center;
     display: flex;
     gap: 2rem;
     flex-direction: column;
     justify-content: center;
-    /*MAX-WIDTH*/
 }
 
 /*------------Title (FIXO)--------*/
@@ -350,6 +349,20 @@ article {
     flex-direction: column;
     justify-content: center;
     height: 90vh;
+}
+
+.contato-empresa{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    background-color: var(--bege);
+    width: 14vw;
+    height: 4vh;
+}
+
+.contato-image{
+    width: 3.5vw;
 }
 
 .contato-container {

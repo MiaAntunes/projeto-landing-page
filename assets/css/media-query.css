@@ -73,9 +73,16 @@
         height: 100vh;
     }
 
+    .contato-empresa{
+        width: 10vw;
+    }
 
     .contato-container {
         width: 45vw;
+    }
+
+    .contato-image {
+        width: 3vw;
     }
 
     .contato-input {
@@ -372,6 +379,15 @@
         height: 65vh;
     }
 
+    .contato-empresa{
+        width: 10vw;
+        height: 4vh;
+    }
+
+    .contato-image {
+        width: 2.5vw;
+    }
+
 }
 
 @media screen and (min-device-width : 1280px) and (max-device-width : 1440px) {
@@ -555,6 +571,15 @@
         gap: 4rem;
         flex-direction: row;
         height: 90vh;
+    }
+
+    .contato-empresa{
+        width: 10vw;
+        height: 4vh;
+    }
+
+    .contato-image {
+        width: 2vw;
     }
 
     .contato-container {
@@ -791,6 +816,15 @@
         height: 90vh;
     }
 
+    .contato-empresa{
+        width: 7vw;
+        height: 4vh;
+    }
+
+    .contato-image {
+        width: 1.5vw;
+    }
+
     .contato-container {
         height: 55vh;
         width: 50vw;
@@ -956,8 +990,8 @@
     .nossoServico-quadrado {
         padding: .1em;
         box-shadow: 10px 10px 1px var(--cinza);
-        height: 15em;
-        width: 15em;
+        height: 12em;
+        width: 12em;
     }
 
     .nossoServico-text {
@@ -1043,6 +1077,16 @@
         gap: 4rem;
         flex-direction: row;
         height: 90vh;
+    }
+
+    .contato-empresa{
+        gap: 2em;
+        width: 5vw;
+        height: 4vh;
+    }
+
+    .contato-image {
+        width: 1.35vw;
     }
 
     .contato-container {
