@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,8 +17,12 @@
             <img src="assets/img/logo-header.png" alt="Foto da Logo" class="logo-header">
             <nav class="menuNormal">
                 <ul class="menuNormal-lista">
-                    <li class="menuNormal-item"><a href="#home" class="menuNormal-link">Home</a></li>
-                    <li class="menuNormal-item"><a href="#quemSomos" class="menuNormal-link">Quem Somos?</a></li>
+                    <li class="menuNormal-item">
+                        <a href="#home" class="menuNormal-link">Home</a>
+                    </li>
+                    <li class="menuNormal-item">
+                        <a href="#quemSomos" class="menuNormal-link">Quem Somos?</a>
+                    </li>
                     <li class="menuNormal-item"><a href="#nossoServiço" class="menuNormal-link">Nossos Serviços</a></li>
                     <li class="menuNormal-item"><a href="#FAQ" class="menuNormal-link">FAQ/Perguntas Frequentes</a></li>
                     <li class="menuNormal-item"><a href="#ondeEstamos" class="menuNormal-link">Onde estamos</a></li>
@@ -170,17 +173,18 @@
             <form class="contato-container">
                 <div class="contato-box">
                     <label for="name" class="contato-label">Nome:</label>
-                    <input type="text" name="name" id="input-name" class="contato-input"></br>
+                    <input type="text" name="name" id="input-name" class="contato-input" required></br>
                 </div>
                 <div class="contato-box">
                     <label for="fone" class="contato-label">Fone:</label>
-                    <input type="tel" name="fone" id="input-fone" class="contato-input"></br>
+                    <input type="tel" name="fone" id="input-fone" class="contato-input" required placeholder="(DD) 00000-0000" minlength="10" maxlength="11"></br>
                 </div>
                 <div class="contato-box">
                     <label for="email" class="contato-label">Email:</label>
-                    <input type="email" name="email" id="input-email" class="contato-input"></br>
+                    <input type="email" name="email" id="input-email" class="contato-input" required></br>
                 </div>
-                <button class="contato-button">Enviar</button>
+                <button class="contato-button" onclick="enviarFormulario(event)">Enviar</button>
+                <p id="verificacao"></p>
             </form>
         </section>
     </main>
