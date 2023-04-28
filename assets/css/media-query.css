@@ -254,6 +254,10 @@
         font-size: 1.3rem;
     }
 
+    #verificacao{
+        font-size: .9rem;
+    }
+
     /*---------------FOOTER---------------------------------------*/
     .footer-text {
         font-size: 1.2em;
@@ -365,7 +369,7 @@
 
     /*---------------Contato---------------------------------------*/
     .contato-container {
-        height: 50vh;
+        height: 65vh;
     }
 
 }
@@ -572,6 +576,10 @@
         font-size: 1rem;
         height: 6vh;
         width: 8rem;
+    }
+
+    #verificacao{
+        font-size: 1rem;
     }
 
     /*---------------FOOTER---------------------------------------*/
@@ -804,6 +812,10 @@
         width: 9rem;
     }
 
+    #verificacao{
+        font-size: 1rem;
+    }
+
     /*---------------FOOTER---------------------------------------*/
     footer {
         height: 4.5vh;
@@ -865,7 +877,7 @@
     }
 
     .title {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     /*----------------------HOME------------------------*/
@@ -1034,12 +1046,12 @@
     }
 
     .contato-container {
-        height: 55vh;
-        width: 50vw;
+        height: 60vh;
+        width: 45vw;
     }
 
     .contato-label {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .contato-input {
@@ -1052,6 +1064,10 @@
         font-size: 1rem;
         height: 7vh;
         width: 10rem;
+    }
+
+    #verificacao{
+        font-size: 1rem;
     }
 
     /*---------------FOOTER---------------------------------------*/
