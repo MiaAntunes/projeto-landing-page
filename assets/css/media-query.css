@@ -73,7 +73,7 @@
         height: 100vh;
     }
 
-    .contato-empresa{
+    .contato-empresa {
         width: 10vw;
     }
 
@@ -137,7 +137,7 @@
     }
 
     .text {
-        font-size: .85em;
+        font-size: .80em;
     }
 
     /*----------------------HOME------------------------*/
@@ -167,6 +167,7 @@
     .quemSomos-content {
         width: 40vw;
         height: 30vh;
+        padding: 1em .5em;
     }
 
     .social-photo {
@@ -261,7 +262,7 @@
         font-size: 1.3rem;
     }
 
-    #verificacao{
+    #verificacao {
         font-size: .9rem;
     }
 
@@ -374,12 +375,15 @@
         font-size: .68rem;
     }
 
+    /*---------------FAQ/Perguntas Frequentemente----------------*/
+    /* ! rever*/
+
     /*---------------Contato---------------------------------------*/
     .contato-container {
         height: 65vh;
     }
 
-    .contato-empresa{
+    .contato-empresa {
         width: 10vw;
         height: 4vh;
     }
@@ -437,6 +441,11 @@
         font-size: 1.2em;
     }
 
+    .text{
+        font-size: .75em;
+        line-height: 1.77em;
+    }
+
     /*----------------------HOME------------------------*/
     .home-container {
         gap: 1.5em;
@@ -448,10 +457,6 @@
 
     #photo-home {
         width: 28em
-    }
-
-    .text {
-        font-size: .9em;
     }
 
     .home-paragraphy {
@@ -511,26 +516,20 @@
 
     /*---------------FAQ/Perguntas Frequentemente----------------*/
     .faq {
-        height: 100vh;
+        height: 200vh;
     }
 
     .faq-content {
         display: grid;
-        grid-template-areas:
-            "quadrado-1"
-            "quadrado-2"
-            "quadrado-3"
-            "quadrado-4";
-        grid-template-columns: repeat(4, 25vh);
-        grid-template-rows: repeat(5, 3em);
+        grid-template-columns: repeat(4, 35vh);
+        grid-template-rows: repeat(4, auto);
         gap: 1.5em;
         justify-content: center;
-        text-align: center;
         height: auto;
     }
 
-    .quadrado {
-        font-size: .7em;
+    .faq-title{
+        font-size: .68em;
     }
 
     .quadrado-1 {
@@ -577,7 +576,7 @@
         height: 90vh;
     }
 
-    .contato-empresa{
+    .contato-empresa {
         width: 10vw;
         height: 4vh;
     }
@@ -607,7 +606,7 @@
         width: 8rem;
     }
 
-    #verificacao{
+    #verificacao {
         font-size: 1rem;
     }
 
@@ -685,7 +684,7 @@
     }
 
     .text {
-        font-size: 1rem;
+        font-size: .78rem;
     }
 
     /*---------------QUEM SOMOS?----------------*/
@@ -741,8 +740,9 @@
     }
 
     /*---------------FAQ/Perguntas Frequentemente----------------*/
+    
     .faq {
-        height: 100vh;
+        height: 200vh;
     }
 
     .faq-article {
@@ -755,22 +755,21 @@
 
     .faq-content {
         display: grid;
-        grid-template-areas:
-            "quadrado-1"
-            "quadrado-2"
-            "quadrado-3"
-            "quadrado-4";
         grid-template-columns: repeat(4, 30vh);
-        grid-template-rows: repeat(5, 3.5em);
-        gap: 1.5em 3em;
+        grid-template-rows: repeat(4, auto);
+        gap: 0.7em 1.5em;
         justify-content: center;
-        text-align: center;
         height: auto;
     }
 
-    .quadrado {
-        font-size: .9em;
+    .faq-title {
+        font-size: .85em;
     }
+
+    .faq-text{
+        font-size: .7em;
+    }
+
 
     .quadrado-1 {
         grid-column: 1/2;
@@ -820,7 +819,7 @@
         height: 90vh;
     }
 
-    .contato-empresa{
+    .contato-empresa {
         width: 7vw;
         height: 4vh;
     }
@@ -850,7 +849,7 @@
         width: 9rem;
     }
 
-    #verificacao{
+    #verificacao {
         font-size: 1rem;
     }
 
@@ -918,6 +917,12 @@
         font-size: 1.5em;
     }
 
+    
+    .text {
+        font-size: .95rem;
+        line-height: 1.8em;
+    }
+
     /*----------------------HOME------------------------*/
     .home {
         height: 85vh;
@@ -943,9 +948,6 @@
         text-align: center;
     }
 
-    .text {
-        font-size: 1.1rem;
-    }
 
     /*---------------QUEM SOMOS?----------------*/
     .quemSomos {
@@ -963,7 +965,7 @@
     }
 
     .social-photo {
-        width: 3em;
+        width: 2.3em;
     }
 
     #photo-1,
@@ -1004,34 +1006,31 @@
 
     /*---------------FAQ/Perguntas Frequentemente ----------------*/
     .faq {
-        height: 100vh;
+        height: 200vh;
     }
-
+    
     .faq-article {
         gap: 2.5em;
     }
 
     .faq-quadrado-span {
-        width: 10em;
+        width: 8em;
     }
 
     .faq-content {
         display: grid;
-        grid-template-areas:
-            "quadrado-1"
-            "quadrado-2"
-            "quadrado-3"
-            "quadrado-4";
-        grid-template-columns: repeat(4, 35vh);
-        grid-template-rows: repeat(5, 4.5em);
-        gap: 1.5em 3em;
+        grid-template-columns: repeat(4, 40vh);
+        grid-template-rows: repeat(4, auto);
+        gap: 0.7em 1em;
         justify-content: center;
-        text-align: center;
         height: auto;
     }
 
-    .quadrado {
-        font-size: 1.1em;
+    .faq-title {
+        font-size: 1em;
+    }
+    .faq-text{
+        font-size: .80rem;
     }
 
     .quadrado-1 {
@@ -1083,7 +1082,7 @@
         height: 90vh;
     }
 
-    .contato-empresa{
+    .contato-empresa {
         gap: 2em;
         width: 5vw;
         height: 4vh;
@@ -1114,7 +1113,7 @@
         width: 10rem;
     }
 
-    #verificacao{
+    #verificacao {
         font-size: 1rem;
     }
 

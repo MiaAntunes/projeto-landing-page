@@ -204,6 +204,7 @@ main {
 
 .quemSomos-content {
     width: 50vw;
+    padding: 1em;
 }
 
 .social-link {
@@ -259,16 +260,21 @@ main {
 }
 
 .nossoServico-quadrado {
+    align-items: center;
+    display: flex;
     background-color: var(--bege);
-    box-shadow: 5px 5px 1px var(--cinza);
+    box-shadow: 7px 7px 1px var(--cinza);
     height: 7em;
     width: 7em;
 }
 
 .nossoServico-text {
-    font-size: .5em;
-    margin: .6rem;
+    font-size: .7em;
+    font-weight: 600;
+    margin: 0.6rem;
     text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.32);
 }
 
 /*---------------FAQ/Perguntas Frequentemente----------------*/
@@ -283,22 +289,25 @@ main {
 
 .faq-content {
     display: grid;
-    grid-template-areas:
-        "quadrado-1"
-        "quadrado-2"
-        "quadrado-3"
-        "quadrado-4";
     grid-template-columns: repeat(5, 4.5vh);
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(4, auto);
     gap: 2em;
     text-align: center;
-    height: 90vh;
+    height: auto;
+}
+
+.faq-title{
+    font-size: .6em;
+}
+
+.faq-text{
+    font-size: .5em;
+    line-height: 1.8em;
 }
 
 .quadrado {
     border: 2px solid var(--cinza);
     padding: 1em;
-    font-size: .55em;
 }
 
 .quadrado-1 {
@@ -336,7 +345,6 @@ main {
 }
 
 .ondeEstamos-content {
-    height: 25vh;
     max-width: 45vw;
 }
 
