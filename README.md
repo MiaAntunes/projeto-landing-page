@@ -64,7 +64,7 @@ Link para
 <br>
 
 # Hospedagem
-[Hospedagem](https://landing-page-upfour-9ix4bm2zn-miaantunes.vercel.app)
+[Hospedagem](https://landing-page-upfour.vercel.app/)
 <br>
 <br>
 <br>
