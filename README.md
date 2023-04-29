@@ -1,5 +1,8 @@
 # Landing Page upfour.
 ![Logo](assets/img/README/logo-readme.png)
+<br>
+<br>
+<br>
 
 # Sumário
 <!--ts-->
@@ -11,6 +14,9 @@
    * [Licença](#licença)
 
 <!--te-->
+<br>
+<br>
+<br>
 
 
 # Prévia do Design
@@ -18,11 +24,18 @@
 
 Link para
 [Figma](https://www.figma.com/file/65dlz2DhUriWut9usaeHGE/Projeto-Landing-Page---Upfour?node-id=45%3A108&t=gY91RIABDafnr29e-1)
+<br>
+<br>
+<br>
 
 
 # Sobre
 
-//Textooo
+ O objetivo do projeto Landing Page é se familiarizar com as tecnologias de Front-End e adquirir experiência nessa área. A escolha da empresa Upfour para o projeto Landing Page se deu tanto pela temática quanto pela sua paleta de cores. <br>
+<br>
+<br>
+<br>
+
 
 # Etapa de Construção
 
@@ -36,7 +49,9 @@ Link para
 - [x]  Funcionalidade: DOM
 
 [Projects do Github - Landing Page](https://github.com/users/MiaAntunes/projects/4/views/2)
-
+<br>
+<br>
+<br>
 
 # Tecnologias
 
@@ -44,11 +59,15 @@ Link para
 ![HTML](assets/img/README/html5.svg)
 ![CSS](assets/img/README/css3.svg)
 ![Figma](assets/img/README/javascript.svg)
-
+<br>
+<br>
+<br>
 
 # Hospedagem
-
-link!!!!
+[Hospedagem](https://landing-page-upfour-9ix4bm2zn-miaantunes.vercel.app)
+<br>
+<br>
+<br>
 
 # Licença
 
