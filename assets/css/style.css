@@ -278,7 +278,7 @@ main {
     flex-direction: column;
     justify-content: center;
     color: var(--white);
-    height: 150vh;
+    height: 300vh;
 }
 
 .faq-content {
@@ -288,9 +288,9 @@ main {
         "quadrado-2"
         "quadrado-3"
         "quadrado-4";
-    grid-template-columns: repeat(5, 4vh);
-    grid-template-rows: repeat(6, 9em);
-    gap: 1.5em;
+    grid-template-columns: repeat(5, 4.5vh);
+    grid-template-rows: repeat(6, auto);
+    gap: 2em;
     text-align: center;
     height: 90vh;
 }
@@ -319,6 +319,10 @@ main {
 .quadrado-4 {
     grid-column: 2/6;
     grid-row: 4/5;
+}
+
+.faq-text{
+    padding: 1em;
 }
 
 /*---------------Onde Estamos?--------------------------------*/
